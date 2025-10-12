@@ -1,0 +1,24 @@
+# docker-compose.yml
+version: '3.8'
+
+services:
+  translation-api:
+    # Build the image from the Dockerfile in the current directory.
+    build: .
+    
+    # Map port 8000 on the host to port 8000 in the container.
+    ports:
+      - "8000:8000"
+      
+    # Ensures the container will restart automatically if it crashes.
+    restart: unless-stopped
+    
+    # Optional: For GPU support, you would uncomment the following lines.
+    # This requires an NVIDIA GPU and the nvidia-container-toolkit.
+    # deploy:
+    #   resources:
+    #     reservations:
+    #       devices:
+    #         - driver: nvidia
+    #           count: 1
+    #           capabilities: [gpu]

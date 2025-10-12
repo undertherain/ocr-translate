@@ -1,0 +1,8 @@
+# requirements.txt
+fastapi
+uvicorn[standard]
+torch
+transformers
+sentencepiece
+pydantic
+accelerate
