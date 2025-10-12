@@ -1,4 +1,11 @@
-# Japanese-English Translation API
+# Screenshot to OCR to translate for linux desktop
+
+## Set up screenshot tool
+
+Create keyboard shortcut like ctrl+PrtSc associated with `ocr-translate.sh` script provided with this repo.
+It is tested to work with Gnome Shell and Wayland, other compositors might require some massaging.
+
+## Translation API and client
 
 This project provides a high-quality Japanese-to-English translation service powered by the liquidAI/LFM2-350M-ENJP-MT language model. The service is exposed via a RESTful API built with FastAPI and is containerized with Docker for easy deployment. A simple command-line interface (CLI) is also included for direct terminal interaction.
 
