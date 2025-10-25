@@ -7,7 +7,9 @@ It is tested to work with Gnome Shell and Wayland, other compositors might requi
 
 ## Translation API and client
 
-This project provides a high-quality Japanese-to-English translation service powered by the liquidAI/LFM2-350M-ENJP-MT language model. The service is exposed via a RESTful API built with FastAPI and is containerized with Docker for easy deployment. A simple command-line interface (CLI) is also included for direct terminal interaction.
+**only needed if you want custom models / pipeline**
+
+This project provides a high-quality Japanese-to-English translation service powered by the self-hosted language model. The service is exposed via a RESTful API built with FastAPI and is containerized with Docker for easy deployment. A simple command-line interface (CLI) is also included for direct terminal interaction.
 
 ## ✨ Features
 
