@@ -5,6 +5,11 @@
 Create keyboard shortcut like ctrl+PrtSc associated with `ocr-translate.sh` script provided with this repo.
 It is tested to work with Gnome Shell and Wayland, other compositors might require some massaging.
 
+
+## Requirements
+
+`apt install gnome-screenshot tesseract`
+
 ## Translation API and client
 
 **only needed if you want custom models / pipeline**
@@ -27,6 +32,7 @@ This project provides a high-quality Japanese-to-English translation service pow
 
 The repository is organized with a clear separation of concerns for the API, model logic, and deployment configuration.
 
+```
 .
 ├── docker-compose.yml  # Manages the containerized application
 ├── Dockerfile          # Blueprint for building the application image
@@ -34,6 +40,7 @@ The repository is organized with a clear separation of concerns for the API, mod
 ├── cli.py              # Command-line client to interact with the API
 ├── translator.py       # Core logic for loading the model and translating
 └── requirements.txt    # Python project dependencies
+```
 
 ## 🚀 Getting Started
 
